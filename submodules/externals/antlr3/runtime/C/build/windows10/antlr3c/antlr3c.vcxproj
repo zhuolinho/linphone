@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\antlr3.h" />
+    <ClInclude Include="..\..\..\include\antlr3baserecognizer.h" />
+    <ClInclude Include="..\..\..\include\antlr3basetree.h" />
+    <ClInclude Include="..\..\..\include\antlr3basetreeadaptor.h" />
+    <ClInclude Include="..\..\..\include\antlr3bitset.h" />
+    <ClInclude Include="..\..\..\include\antlr3collections.h" />
+    <ClInclude Include="..\..\..\include\antlr3commontoken.h" />
+    <ClInclude Include="..\..\..\include\antlr3commontree.h" />
+    <ClInclude Include="..\..\..\include\antlr3commontreeadaptor.h" />
+    <ClInclude Include="..\..\..\include\antlr3commontreenodestream.h" />
+    <ClInclude Include="..\..\..\include\antlr3convertutf.h" />
+    <ClInclude Include="..\..\..\include\antlr3cyclicdfa.h" />
+    <ClInclude Include="..\..\..\include\antlr3debugeventlistener.h" />
+    <ClInclude Include="..\..\..\include\antlr3defs.h" />
+    <ClInclude Include="..\..\..\include\antlr3encodings.h" />
+    <ClInclude Include="..\..\..\include\antlr3errors.h" />
+    <ClInclude Include="..\..\..\include\antlr3exception.h" />
+    <ClInclude Include="..\..\..\include\antlr3filestream.h" />
+    <ClInclude Include="..\..\..\include\antlr3input.h" />
+    <ClInclude Include="..\..\..\include\antlr3interfaces.h" />
+    <ClInclude Include="..\..\..\include\antlr3intstream.h" />
+    <ClInclude Include="..\..\..\include\antlr3lexer.h" />
+    <ClInclude Include="..\..\..\include\antlr3memory.h" />
+    <ClInclude Include="..\..\..\include\antlr3parser.h" />
+    <ClInclude Include="..\..\..\include\antlr3parsetree.h" />
+    <ClInclude Include="..\..\..\include\antlr3recognizersharedstate.h" />
+    <ClInclude Include="..\..\..\include\antlr3rewritestreams.h" />
+    <ClInclude Include="..\..\..\include\antlr3string.h" />
+    <ClInclude Include="..\..\..\include\antlr3tokenstream.h" />
+    <ClInclude Include="..\..\..\include\antlr3treeparser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\antlr3baserecognizer.c" />
+    <ClCompile Include="..\..\..\src\antlr3basetree.c" />
+    <ClCompile Include="..\..\..\src\antlr3basetreeadaptor.c" />
+    <ClCompile Include="..\..\..\src\antlr3bitset.c" />
+    <ClCompile Include="..\..\..\src\antlr3collections.c" />
+    <ClCompile Include="..\..\..\src\antlr3commontoken.c" />
+    <ClCompile Include="..\..\..\src\antlr3commontree.c" />
+    <ClCompile Include="..\..\..\src\antlr3commontreeadaptor.c" />
+    <ClCompile Include="..\..\..\src\antlr3commontreenodestream.c" />
+    <ClCompile Include="..\..\..\src\antlr3convertutf.c" />
+    <ClCompile Include="..\..\..\src\antlr3cyclicdfa.c" />
+    <ClCompile Include="..\..\..\src\antlr3debughandlers.c" />
+    <ClCompile Include="..\..\..\src\antlr3encodings.c" />
+    <ClCompile Include="..\..\..\src\antlr3exception.c" />
+    <ClCompile Include="..\..\..\src\antlr3filestream.c" />
+    <ClCompile Include="..\..\..\src\antlr3inputstream.c" />
+    <ClCompile Include="..\..\..\src\antlr3intstream.c" />
+    <ClCompile Include="..\..\..\src\antlr3lexer.c" />
+    <ClCompile Include="..\..\..\src\antlr3parser.c" />
+    <ClCompile Include="..\..\..\src\antlr3rewritestreams.c" />
+    <ClCompile Include="..\..\..\src\antlr3string.c" />
+    <ClCompile Include="..\..\..\src\antlr3tokenstream.c" />
+    <ClCompile Include="..\..\..\src\antlr3treeparser.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01ccccc9-ca0c-4528-92bc-5b8be1d02d6d}</ProjectGuid>
+    <Keyword>DynamicLibrary</Keyword>
+    <ProjectName>antlr3c</ProjectName>
+    <RootNamespace>antlr3c</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.2</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'linphone' target in the 'linphone' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#ifdef __IPHONE_8_0
+// suppress these errors until we are ready to handle them
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
+#else
+// temporarily define an empty NS_DESIGNATED_INITIALIZER so we can use now,
+// will be ready for iOS8 SDK
+#define NS_DESIGNATED_INITIALIZER
+#endif

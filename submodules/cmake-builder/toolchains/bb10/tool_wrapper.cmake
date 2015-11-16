@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ARGS=$*
+source @BBNDK_ENV_SCRIPT@ && @BB10_TOOLCHAIN_PATH@-@TOOLNAME@ $ARGS
